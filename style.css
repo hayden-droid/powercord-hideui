@@ -1,0 +1,27 @@
+/*
+	GENERAL ITEMS
+*/
+div#app-mount div[class^="wordmark"] { display: none; } /* Discord Logo */
+div[class^="noticeStreamerMode"] { display: none; } /* Streaming Banner */
+div[class^="sidebar"] > div[class^="panels"] > div[class^="panel"] { display: none; } /* Ready To Stream */
+div[data-focus-lock-disabled="false"] div[class^="quickswitcher"] > div[class^="tutorial"] { display: none; } /* Search Tutorial */
+
+/*
+	SIDEBAR PANEL
+*/
+div[class^="sidebarRegion"] nav[class^="sidebar"] > div[class^="side"] > div[class^="separator"]:nth-child(7) { display: none; } /*  Nitro / Boost / HypeSquad Separator */
+div[class^="sidebarRegion"] nav[class^="sidebar"] > div[class^="side"] > div[class^="separator"]:nth-last-child(4) { display: none; } /* Change Log Separator */
+div[class^="sidebarRegion"] nav[class^="sidebar"] > div[class^="side"] > div[class^="separator"]:nth-last-child(2) { display: none; } /* Social Links Separator */
+div[class^="sidebarRegion"] nav[class^="sidebar"] > div[class^="side"] > div[class^="socialLinks"] { display: none; } /* Social Links */
+
+/*
+	COMMUNITY PANEL 
+*/
+div[class^="privateChannels"] a[class^="channel"][href="/activity"] { display: none; } /* Activity */
+div[class^="privateChannels"] a[class^="channel"][href="/library"] { display: none; } /* Library */
+div[class^="privateChannels"] a[class^="channel"][href="/store"] { display: none; } /* Nitro */
+
+/*
+	FRIENDS TOOLBAR
+*/
+div[class^="toolbar"] > a[href="https://support.discordapp.com"] { display: none; } /* Help Icon */
