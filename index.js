@@ -37,7 +37,7 @@ module.exports = class HideUI extends Plugin {
 
         const CSSObserver = new MutationObserver(function(mutations) {
 
-            let node = document.getElementById('powercord-css-hideui');
+            let node = document.getElementById('powercord-css-powercord-hideui');
             if (node && node.textContent) {
                 CSSObserver.disconnect();
 

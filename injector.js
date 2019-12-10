@@ -55,7 +55,7 @@ const UpdateUI = function(style, choice, render = 'block') {
     }
 
     // Find the corresponding rule and update
-    for (let rule of document.getElementById('powercord-css-hideui').sheet.cssRules) {
+    for (let rule of document.getElementById('powercord-css-powercord-hideui').sheet.cssRules) {
         if (rule.cssText == style) {
             rule.style.display = newStyle;
             break;
