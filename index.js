@@ -38,7 +38,7 @@ module.exports = class HideUI extends Plugin {
         const CSSObserver = new MutationObserver(function(mutations) {
 
             let node = document.getElementById('powercord-css-hideui');
-            if (node.textContent) {
+            if (node && node.textContent) {
                 CSSObserver.disconnect();
 
                 Injector.UpdateUI(Injector.StyleSheetsCSS.get('fhelp'), prefs.get('fhelp'), 'flex');
@@ -58,7 +58,6 @@ module.exports = class HideUI extends Plugin {
         CSSObserver.observe(document.body, Options);
 
         const SettingsObserver = new MutationObserver(function(mutations){
-            // #app-mount > div.app-19_DXt > div > div.layers-3iHuyZ.layers-3q14ss > div > div > div.base-3dtUhz > div > div.sidebar-2K8pFh > div.panels-j1Uci_
             let node = document.querySelector('div[class^="sidebar"] > div[class^="panels"] button[aria-label="User Settings"]');
             if (node) {
                 SettingsObserver.disconnect();
